@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--    401-->
+    <definition name="401" template="/WEB-INF/views/layouts/401.jsp"/>
+
+    <!--    Template Definition-->
+    <definition name="base.definition" template="/WEB-INF/views/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/basefragment/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/basefragment/_menu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="foot-nav" value="/WEB-INF/views/basefragment/foot-nav-1.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/basefragment/footer.jsp"/>
+    </definition>
+    <!--     Detail page definition-->
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="home"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/home.jsp"/>
+    </definition>
+
+    <definition name="shop" extends="base.definition">
+        <put-attribute name="title" value="shop"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/shop.jsp"/>
+    </definition>
+
+    <definition name="product-single" extends="base.definition">
+        <put-attribute name="title" value="product-single"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/product-single.jsp"/>
+    </definition>
+
+    <definition name="about" extends="base.definition">
+        <put-attribute name="title" value="about"/>
+        <put-attribute name="foot-nav" value="/WEB-INF/views/basefragment/foot-nav-2.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/about.jsp"/>
+    </definition>
+
+    <definition name="cart" extends="base.definition">
+        <put-attribute name="title" value="cart"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/cart.jsp"/>
+    </definition>
+
+    <definition name="checkout" extends="base.definition">
+        <put-attribute name="title" value="checkout"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/checkout.jsp"/>
+    </definition>
+
+    <definition name="contact" extends="base.definition">
+        <put-attribute name="title" value="contact"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/contact.jsp"/>
+    </definition>
+
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" value="login"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/login.jsp"/>
+    </definition>
+
+    <definition name="forget-password" extends="base.definition">
+        <put-attribute name="title" value="login"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/forget-password.jsp"/>
+    </definition>
+
+    <definition name="register" extends="base.definition">
+        <put-attribute name="title" value="register"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/register.jsp"/>
+    </definition>
+
+    <definition name="wish-list" extends="base.definition">
+        <put-attribute name="title" value="wish-list"/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/wish-list.jsp"/>
+    </definition>
+
+    <!--    Admin Template Definition-->
+    <definition name="base.admin.definition" template="/WEB-INF/views/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/basefragment/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/basefragment/admin-menu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="foot-nav" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/basefragment/footer.jsp"/>
+    </definition>
+
+    <definition name="admin" extends="base.admin.definition">
+        <put-attribute name="title" value="admin"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin.jsp"/>
+    </definition>
+
+    <definition name="admin-orders" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-orders.jsp"/>
+    </definition>
+
+    <definition name="admin-orders-details" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-orders-details"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-order-details.jsp"/>
+    </definition>
+
+    <definition name="admin-products" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-products.jsp"/>
+    </definition>
+
+    <definition name="admin-product-details" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-product-details.jsp"/>
+    </definition>
+
+    <definition name="admin-sales" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-sales"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-sales.jsp"/>
+    </definition>
+
+    <definition name="admin-sales-stats" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-sales"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-sales-stats.jsp"/>
+    </definition>
+
+    <definition name="admin-sales-best-seller" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-sales"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-sales-best-seller.jsp"/>
+    </definition>
+
+    <definition name="admin-promotions" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-promotions"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-promotions.jsp"/>
+    </definition>
+
+    <definition name="admin-category" extends="base.admin.definition">
+        <put-attribute name="title" value="admin-category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/admin-category.jsp"/>
+    </definition>
+
+    <!--    Admin Template Definition-->
+    <definition name="base.customer.definition" template="/WEB-INF/views/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/basefragment/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/basefragment/customer-menu.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="foot-nav" value="/WEB-INF/views/basefragment/foot-nav-1.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/basefragment/footer.jsp"/>
+    </definition>
+
+    <definition name="customer-orders" extends="base.customer.definition">
+        <put-attribute name="title" value="customer-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/customer-orders.jsp"/>
+    </definition>
+
+    <definition name="customer-order-details" extends="base.customer.definition">
+        <put-attribute name="title" value="customer-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/customer-order-details.jsp"/>
+    </definition>
+
+    <definition name="customer-consumption" extends="base.customer.definition">
+        <put-attribute name="title" value="customer-orders"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyfragments/customer-consumption.jsp"/>
+    </definition>
+
+</tiles-definitions>
